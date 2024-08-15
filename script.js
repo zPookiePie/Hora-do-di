@@ -7,19 +7,19 @@ function carregar() {
     var minute = data.getMinutes()
     msg.innerHTML = `Agora são ${hora} horas e ${minute} minutos`
     if (hora >=0 && hora < 6){
-        img.src= '/imagens/madrugada.jpg'
+        img.src= 'madrugada.jpg'
         document.body.style.background ='#25338aff'
         msg2.innerHTML = `Boa Madrugada!!`
     } else if (hora >= 6 && hora < 12) {
-        img.src = '/imagens/manha.jpg'
+        img.src = 'manha.jpg'
         document.body.style.background ='#77c0e9ff'
         msg2.innerHTML = `Bom Dia!!`
     } else if (hora >= 12 && hora < 18) {
-        img.src = '/imagens/tarde.jpg'
+        img.src = 'tarde.jpg'
         document.body.style.background ='#ffc07aff'
         msg2.innerHTML = `Boa Tarde!!`
     } else {
-        img.src = '/imagens/noite.jpg'
+        img.src = 'noite.jpg'
         document.body.style.background ='#1a2340ff'
         msg2.innerHTML = `Boa Noite!!`
     }
